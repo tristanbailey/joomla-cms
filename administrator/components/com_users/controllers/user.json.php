@@ -25,16 +25,8 @@ class UsersControllerUser extends JControllerForm
 	 */
 	public function endSession()
 	{
-		JLog::add('my debug message' . $this->input->getInt('user_id'), JLog::DEBUG, 'my-debug-category');
-
-		$userId = $this->input->getInt('user_id'); // is getting the User id not the Edit id
+		$userId = $this->input->getInt('user_id'); // Is getting the User id not the Edit id
 		$data   = array();
-
-		// var_dump($userId);
-		// exit();
-
-
-		// exit
 
 		if ($userId !== 0)
 		{
